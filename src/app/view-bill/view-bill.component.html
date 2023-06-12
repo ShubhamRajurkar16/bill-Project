@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Country</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Mobile No.</th>
+                <th>Email</th>
+                <th>GST NO.</th>
+                <th>PAN No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of allData">
+                <td>
+                    <mat-icon  (click)="deleteDataById()">delete</mat-icon>
+                    <mat-icon>update</mat-icon>
+                    <mat-icon>visibility</mat-icon>
+                </td>
+                <td>{{data.Code}}</td>
+                <td>{{data.Name}}</td>
+                <td>{{data.Address}}</td>
+                <td>{{data.Country}}</td>
+                <td>{{data.State}}</td>
+                <td>{{data.City}}</td>
+                <td>{{data.Mobile}}</td>
+                <td>{{data.Email}}</td>
+                <td>{{data.GSTNo}}</td>
+                <td>{{data.PANNo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
